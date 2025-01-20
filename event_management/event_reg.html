@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<title> EVENT MANAGEMENT Details </title>
+<link rel="stylesheet" href="t1.css">
+<style>
+
+Table{
+    
+    color: rgb(179, 255, 0);
+    width:40%;
+    border:20px;
+    padding:20px;
+   
+    
+}
+tr{
+    
+    height: 60px;
+    border: 10px;
+    padding:20px
+
+}
+body {
+  background-image:url("festival.png");
+ 
+  background-size:cover;
+
+
+}
+</style>
+</head>
+<body>
+<h1 style="color:rgb(255, 98, 0);text-align:center; "> Please submit your form</h4>
+<form action="payment.php" method="post">
+   <table align="center">
+        <tr>
+            <td> NAME :</td>
+            <td><input type="text" name="name">
+           </td>
+           
+        </tr>
+            
+        <tr>
+            <td>DATE:</td>
+            <td><input type="Date" name="date"></td>
+        </tr>
+             
+        <tr>
+          <td> Location :</td>
+          <td> <input type="text" name="location"> </td>
+          
+        </tr>
+        <tr>
+          <td> Event type:</td>
+          <td> <select name="TYPE">
+            <OPTION VALUE="CONCERT">CONCERT</OPTION>
+            <OPTION VALUE="COLLEGE EVENTS">COLLEGE EVENTS</OPTION>
+            <OPTION VALUE="EXHIBITIONS">EXHIBITIONS</OPTION>
+            <OPTION VALUE="MEETINGS">MEETINGS</OPTION>
+            <OPTION VALUE="CONFERENCES">CONFERENCES</OPTION>
+            <OPTION VALUE="FASHION SHOWS">FASHION SHOWS</OPTION>
+            <OPTION VALUE="SEMINARS">SEMINARS</OPTION>
+
+          </select></td>
+        </tr>
+          
+          
+          <tr>
+          <td> Title: </td>
+          <td> <input type="text" name="title"></td></tr>
+          
+          <tr>
+          <td> Description: </td>
+          <td> <input type =" text" name="description"></td></tr>
+          
+          <tr>
+          <td>Time Slot:</td>
+          <td>
+          <select name="TIME">
+          <OPTION VALUE="10 AM-4 PM">10 AM-4 PM</OPTION>
+          <OPTION VALUE="5 PM-8 PM">5 PM-8 PM</OPTION>
+          <OPTION VALUE="9 PM -12 AM">9 PM -12 AM</OPTION>
+
+        </select>
+    </td>
+          </tr>
+          
+          <tr>
+          <td>Capacity:</td>
+          <td><input type="number" name="capacity"></td></tr>
+          <tr>
+            <td>Ticket Price:</td>
+            <td><input type="number" name="ticket_price"></td>
+        </tr>
+        <tr>
+          <td>Insert Poster:</td>
+          <td><input type="file" name="poster"></td>
+        </tr>
+         <tr>
+         <td style=" width:15 px"><input type ="submit" value= "Calculate Taka" style="color:blue;"></td>
+         <td style=" width:15 px"><input type= "Reset" style="color:red;"></td></tr>
+               
+         
+ </tr></table></form>        
+
+</body>
+</html>
+
+
+

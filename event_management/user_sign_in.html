@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(gif1.gif); 
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form action="user_sign_in.php" method="post">
+            <h2>User Sign in</h2>
+            <div class="inputBox">
+                <input type="text" name="mail" required="required" >
+                <span>Mail</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="forget_password.html">Forgot Password</a>
+                <a href="user_signup_form.html">Signup</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

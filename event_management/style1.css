@@ -1,0 +1,129 @@
+
+body,
+h1,
+h2,
+h1 {
+  margin-bottom: 30px; 
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 50px; 
+  text-align: center; 
+  animation: neonGlow 1s linear infinite alternate; 
+  text-shadow: 0 0 10px #ffffff44, 0 0 20px #fff, 0 0 30px #250c0c, 0 0 40px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 0 100px #00fff2, 0 0 150px #00fff2; /* Neon glow effect */
+}
+
+@keyframes neonGlow {
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00bf, 0 0 35px #c300ff, 0 0 40px #f700ff, 0 0 50px #00fff2, 0 0 75px #00fff2; /* Altering shadow size */
+  }
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('hp1.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.quote {
+  text-align: center;
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute; 
+  top: 0; 
+}
+
+.quote p {
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+
+
+.welcome-section {
+  margin-bottom: 60px; 
+}
+  
+.welcome-box {
+  background-color: #dd2626; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+  
+.welcome-section h1 {
+  background-color: #524d4d; 
+  padding: 15px; 
+  border-radius: 8px;
+}
+  
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.option {
+  position: relative;
+  margin: 0 10px;
+  background-color: black; 
+}
+
+.option span {
+  display: block;
+  padding: 15px 25px;
+  background-color: black; 
+  color: white; 
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.option input[type="radio"] {
+  display: none;
+}
+
+.option input[type="radio"]:checked+span {
+  border-color: #3498db;
+  animation: borderAnimation 4s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: #3498db;
+  }
+  25% {
+    border-color: #9b59b6;
+  }
+  50% {
+    border-color: #2ecc71;
+  }
+  75% {
+    border-color: #e74c3c;
+  }
+  100% {
+    border-color: #3498db;
+  }
+}
